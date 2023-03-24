@@ -26,13 +26,13 @@
             </div>
         </nav>
     </div>
-    <div class="container pt-3">
+    <div class="container pt-3 m-0">
         <h1>Contact</h1>
         <p>Phone: <a href="tel:9566223033">(956) 622-3033</a></p>
         <p>Email: <a href="mailto:quinncomics@email.com">quinncomics@email.com</a></p>
         <p>Address: <a href="https://www.google.com/maps/place/Quinn+Comics/@26.1844569,-97.7221539,17z/data=!4m15!1m8!3m7!1s0x866f81be5c7fe5ef:0xf5716021cbc5f911!2s805+Dixieland+Rd,+Harlingen,+TX+78552!3b1!8m2!3d26.1844569!4d-97.7221539!16s%2Fg%2F11k3rkrq2t!3m5!1s0x866f8185777ae421:0x62068a0ed0092d70!8m2!3d26.1844875!4d-97.7221143!16s%2Fg%2F11h84v7qvm" target="_blank">805 Dixieland Rd, Harlingen, TX 78550</a></p>
     </div>
-    <div class="container pt-3">
+    <div class="container pt-3 m-0">
         <div class="row">
             <h1 class="col">Business Hours</h1>
         </div>
@@ -56,6 +56,70 @@
                 <li>10 AM-9 PM</li>
             </ul>
         </div>
+    </div>
+    <div class="container pt-3 m-0">
+        <form>
+            <div class="row">
+                <h1>Submit Feedback</h1>
+            </div>
+            <div class="row mb-3">
+                <label class="col-4 col-form-label" for="first-name">First Name </label>
+                <div class="col-8">
+                    <input class="bg-dark form-control text-white" type="text" name="first-name" id="first-name" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-4 col-form-label" for="last-name">Last Name </label>
+                <div class="col-8">
+                    <input class="bg-dark form-control text-white" type="text" name="last-name" id="last-name">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-4 col-form-label" for="rating" required>How would you rate your experience shopping at Quinn Comics? </label>
+                <div class="col">
+                    <div>
+                        <input class="bg-dark form-check-input mt-2" style="accent-color:#f61e1f" type="radio" name="rating" value="excellent">
+                        <label class="form-check-label mt-1" for="last-name">Excellent</label>
+                    </div>
+                    <div>
+                        <input class="bg-dark form-check-input text-white mt-2" type="radio" name="rating" value="good">
+                        <label class="form-check-label mt-1">Good</label>
+                    </div>
+                    <div>
+                        <input class="bg-dark form-check-input text-white mt-2" type="radio" name="rating" value="average">
+                        <label class="form-check-label mt-1">Average</label>
+                    </div>
+                    <div>
+                        <input class="bg-dark form-check-input text-white mt-2" type="radio" name="rating" value="poor">
+                        <label class="form-check-label mt-1">Poor</label>
+                    </div>
+                    <div>
+                        <input class="bg-dark form-check-input text-red mt-2" type="radio" name="rating" value="very-poor">
+                        <label class="form-check-label mt-1">Very Poor</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-4 col-form-label" for="suggestions">Would you care to share your experience in more detail? Include any suggestions for how we can better serve you. </label>
+                <div class="col-8">
+                    <textarea class="bg-dark form-control text-white" rows="10" maxlength="600" id="suggestions" placeholder="600 character limit"></textarea>
+                </div>
+            </div>
+            <div class="row m-0">
+                <button class="btn text-white" type="submit" >Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="container pt-3 p-0">
+        <footer class="container bg-dark p-3">
+            <div class="row justify-content-center">
+                <h1 class="col text-center m-0">Signup for our newsletter!</h1>
+            </div>
+            <div class="row">
+                <input class="bg-dark form-control border-white m-2 col" type="email" placeholder="Email">
+                <button class="btn col-1 text-white m-2" type="submit">Sign Up</button>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
