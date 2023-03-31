@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <script src="bootstrap.bundle.min.js"></script>
     <title>Quinn Comics</title>
 </head>
@@ -63,45 +64,45 @@
                 <h1>Submit Feedback</h1>
             </div>
             <div class="row mb-3">
-                <label class="col-4 col-form-label" for="first-name">First Name </label>
-                <div class="col-8">
+                <label class="col-4 col-md-3 col-form-label" for="first-name">First Name </label>
+                <div class="col-8 col-md-6">
                     <input class="bg-dark form-control text-white" type="text" name="first-name" id="first-name" required>
                 </div>
             </div>
             <div class="row mb-3">
-                <label class="col-4 col-form-label" for="last-name">Last Name </label>
-                <div class="col-8">
+                <label class="col-4 col-md-3 col-form-label" for="last-name">Last Name </label>
+                <div class="col-8 col-md-6">
                     <input class="bg-dark form-control text-white" type="text" name="last-name" id="last-name">
                 </div>
             </div>
             <div class="row mb-3">
-                <label class="col-4 col-form-label" for="rating" required>How would you rate your experience shopping at Quinn Comics? </label>
+                <label class="col-4 col-md-3 col-form-label" for="rating" required>How would you rate your experience shopping at Quinn Comics? </label>
                 <div class="col">
                     <div>
-                        <input class="bg-dark form-check-input mt-2" style="accent-color:#f61e1f" type="radio" name="rating" value="excellent">
-                        <label class="form-check-label mt-1" for="last-name">Excellent</label>
+                        <input class="bg-dark form-check-input mt-2 col-7" type="radio" name="rating" value="excellent" id="excellent">
+                        <label class="form-check-label mt-1" for="excellent">Excellent</label>
                     </div>
                     <div>
-                        <input class="bg-dark form-check-input text-white mt-2" type="radio" name="rating" value="good">
-                        <label class="form-check-label mt-1">Good</label>
+                        <input class="bg-dark form-check-input text-white mt-2" type="radio" name="rating" value="good" id="good">
+                        <label class="form-check-label mt-1" for="good">Good</label>
                     </div>
                     <div>
-                        <input class="bg-dark form-check-input text-white mt-2" type="radio" name="rating" value="average">
-                        <label class="form-check-label mt-1">Average</label>
+                        <input class="bg-dark form-check-input text-white mt-2" type="radio" name="rating" value="average" id="average">
+                        <label class="form-check-label mt-1" for="average">Average</label>
                     </div>
                     <div>
-                        <input class="bg-dark form-check-input text-white mt-2" type="radio" name="rating" value="poor">
-                        <label class="form-check-label mt-1">Poor</label>
+                        <input class="bg-dark form-check-input text-white mt-2" type="radio" name="rating" value="poor" id="poor">
+                        <label class="form-check-label mt-1" for="poor">Poor</label>
                     </div>
                     <div>
-                        <input class="bg-dark form-check-input text-red mt-2" type="radio" name="rating" value="very-poor">
-                        <label class="form-check-label mt-1">Very Poor</label>
+                        <input class="bg-dark form-check-input text-red mt-2" type="radio" name="rating" value="very-poor" id="very-poor">
+                        <label class="form-check-label mt-1" for="very-poor">Very Poor</label>
                     </div>
                 </div>
             </div>
             <div class="row mb-3">
-                <label class="col-4 col-form-label" for="suggestions">Would you care to share your experience in more detail? Include any suggestions for how we can better serve you. </label>
-                <div class="col-8">
+                <label class="col-4 col-md-3 col-form-label" for="suggestions">Would you care to share your experience in more detail? Include any suggestions for how we can better serve you. </label>
+                <div class="col-8 col-md-6">
                     <textarea class="bg-dark form-control text-white" rows="10" maxlength="600" id="suggestions" placeholder="600 character limit"></textarea>
                 </div>
             </div>
@@ -115,11 +116,21 @@
             <div class="row justify-content-center">
                 <h1 class="col text-center m-0">Signup for our newsletter!</h1>
             </div>
-            <div class="row">
-                <input class="bg-dark form-control border-white m-2 col" type="email" placeholder="Email">
+            <div class="row justify-content-center">
+                <input class="bg-dark form-control border-white m-2 col col-sm-6" style="width:400px" type="email" placeholder="Email">
                 <button class="btn col-1 text-white m-2" type="submit">Sign Up</button>
+            </div>
+            <div class="row text-center justify-content-center mt-3">
+                <a href="https://www.facebook.com/QuinnComics/" target="_blank" class="col-1"><i class="bi bi-facebook" style="font-size:1.5em"></i></a>
+                <a href="https://twitter.com/Quinn_Comics" target="_blank" class="col-1"><i class="bi bi-twitter" style="font-size:1.5em"></i></a>
+                <a href="https://www.instagram.com/quinncomicsshop/?hl=en" target="_blank" class="col-1"><i class="bi bi-instagram" style="font-size:1.5em"></i><a href=""></a>
             </div>
         </footer>
     </div>
 </body>
 </html>
+
+<!--
+    Bugs: 
+    - Click on radio button labels to select option.
+-->
