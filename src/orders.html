@@ -27,8 +27,113 @@
             </div>
         </nav>
     </div>
-    <div class="container-fluid pt-3 p-0">
-        <footer class="container-fluid bg-dark p-3 m-0 justify-content-center">
+    <div class="container pt-3 m-0">
+        <form>
+            <div class="row">
+                <h1>Submit An Order</h1>
+            </div>
+            <div class="row mb-3">
+                <label class="col-4 col-md-3 col-form-label" for="first-name">First Name </label>
+                <div class="col-8 col-md-6">
+                    <input class="bg-dark form-control text-white" type="text" name="first-name" id="first-name" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-4 col-md-3 col-form-label" for="last-name">Last Name </label>
+                <div class="col-8 col-md-6">
+                    <input class="bg-dark form-control text-white" type="text" name="last-name" id="last-name">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-4 col-md-3 col-form-label" for="number">Phone Number </label>
+                <div class="col-8 col-md-6">
+                    <input class="bg-dark form-control text-white" type="tel" name="number" id="number">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-4 col-md-3 col-form-label" for="product-type" required>What type of product are you looking for? </label>
+                <div class="col">
+                    <div>
+                        <input class="bg-dark form-check-input mt-2 col-7" type="radio" name="product-type" value="paperback" id="paperback">
+                        <label class="form-check-label mt-1" for="excellent">Trade Paperback</label>
+                    </div>
+                    <div>
+                        <input class="bg-dark form-check-input text-white mt-2" type="radio" name="product-type" value="hardcover" id="hardcover">
+                        <label class="form-check-label mt-1" for="good">Hardcover Book</label>
+                    </div>
+                    <div>
+                        <input class="bg-dark form-check-input text-white mt-2" type="radio" name="product-type" value="toy" id="toy">
+                        <label class="form-check-label mt-1" for="average">Toy</label>
+                    </div>
+                    <div>
+                        <input class="bg-dark form-check-input text-white mt-2" type="radio" name="product-type" value="other" id="other">
+                        <label class="form-check-label mt-1" for="poor">Other</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-4 col-md-3 col-form-label" for="suggestions">Include any relevant info for the product you want here (ex: title, author, volume number, toy manufacturer, etc.). </label>
+                <div class="col-8 col-md-6">
+                    <textarea class="bg-dark form-control text-white" rows="10" maxlength="600" id="suggestions" placeholder="600 character limit"></textarea>
+                </div>
+            </div>
+            <div class="row m-0">
+                <button class="btn text-white" type="submit" >Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="container pt-3 m-0">
+        <form>
+            <div class="row">
+                <h1>Pull List</h1>
+                <p><i>At least 5 titles are needed to start a pull list.</i></p>
+            </div>
+            <fieldset>
+                <legend>Contact Info</legend>
+                <div class="row mb-3">    
+                    <label class="col-4 col-md-3 col-form-label" for="first-name">First Name </label>
+                    <div class="col-8 col-md-6">
+                        <input class="bg-dark form-control text-white" type="text" name="first-name" id="first-name" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-4 col-md-3 col-form-label" for="last-name">Last Name </label>
+                    <div class="col-8 col-md-6">
+                        <input class="bg-dark form-control text-white" type="text" name="last-name" id="last-name">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-4 col-md-3 col-form-label" for="number">Phone Number </label>
+                    <div class="col-8 col-md-6">
+                        <input class="bg-dark form-control text-white" type="tel" name="number" id="number">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Add a Book</legend>
+                <div class="row mb-3">
+                    <label class="col-4 col-md-3 col-form-label" for="suggestions">List the titles you would like to add to your pull here. </label>
+                    <div class="col-8 col-md-6">
+                        <textarea class="bg-dark form-control text-white" rows="10" maxlength="600" id="suggestions" placeholder="600 character limit"></textarea>
+                    </div>
+                </div>    
+            </fieldset>
+            <fieldset>
+                <legend>Remove a Book</legend>
+                <div class="row mb-3">
+                    <label class="col-4 col-md-3 col-form-label" for="suggestions">List the titles you would like to remove from your pull here. </label>
+                    <div class="col-8 col-md-6">
+                        <textarea class="bg-dark form-control text-white" rows="10" maxlength="600" id="suggestions" placeholder="600 character limit"></textarea>
+                    </div>
+                </div>    
+            </fieldset>
+            <div class="row m-0">
+                <button class="btn text-white" type="submit" >Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="container-fluid pt-3 p-0">   
+        <footer class="bg-dark p-3 m-0 justify-content-center">
             <div class="row justify-content-center">
                 <h1 class="col text-center m-0">Signup for our newsletter!</h1>
             </div>
