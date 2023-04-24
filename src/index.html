@@ -27,7 +27,33 @@
             </div>
         </nav>
     </div>
-    <div class="container-fluid pt-3 p-0">
+    <div class="container-fluid pt-3 p-0 row justify-content-center">
+        <div class="row text-center">
+            <h1>Come on in and let's talk comics!</h1>
+        </div>
+        <div id="carouselExample" class="row carousel slide pt-3" style="width:700px;border:blue">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/rack.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/funkos.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/toys.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <div class="container-fluid pt-5 p-0 mb-0" style="position:relative;bottom:0">
         <footer class="container-fluid bg-dark p-3 m-0 justify-content-center">
             <div class="row justify-content-center">
                 <h1 class="col text-center m-0">Signup for our newsletter!</h1>
@@ -50,4 +76,6 @@
     Bugs: 
     - Toggle button shows ugly black border when clicked.
     - Vertical nav dropdown animation looks choppy.
+    - Buttons disappear when hovered over.
+    - Navbar should stick to top after it has been scrolled over.
 -->
